@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.navbar {
+  background-color: #604cc3;
+}
+
+a.navbar-brand {
+    color: #fff;
+}
+
+a.navbar-brand:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a.navbar-brand:focus {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px;
+  border-radius: 8px;
+}
+
+.generate-qrcode-box {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  min-height: 300px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.show-qrcode-box {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-height: 300px;
+  max-height: 500px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .generate-qrcode-box,
+  .show-qrcode-box {
+    width: 100%;
+  }
+
+  .generate-qrcode-box {
+    margin-right: 0;
+  }
+
+  .show-qrcode-box {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 992px) {
+  .generate-qrcode-box {
+    width: 60%;
+  }
+
+  .show-qrcode-box {
+    width: 40%;
+  }
+}
